@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #89cff0;
+}
+
+.header{
+  text-align: center;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.container{
+  display: flex;
+}
+
+form{
+  color: blue;
+  /* display: flex; */
+  width: 300px;
+  flex-direction: column;
+  text-align: center;
+}
+label {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+input{
+  width: 80%;
+  display: inline-block;
+}
+
+input[type="submit"]{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  margin-top: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+aside {
+  width: 300px;
+  min-height: 800px;
+  margin-right: 100px;
+  padding: 15px 20px;
+  background: rgb(130, 125, 115);
+}
+
+aside li:hover {
+  /* background: brown; */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.submission{
+  width: 500px
+}
+.aside-container > ul, h1{
+  margin-top: 20px;
+  margin-left: 30px;
+  line-height: 30px;
+}
+
+.submission-options > ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.submission-options li {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.submission-list{
+  width: 100%;
+  /* font-size: 16px; */
+  color: black;
+}
+.subEdit:hover{
+  background: brown;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.subDelete:hover{
+  background: brown;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.codeSnippet{
+  width: 500px;
+}
+
+.snippet-options > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.snippet-options li {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.snippet-options > ul:hover {
+}
+
+.snipedit:hover{
+  background: brown;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.snipdelete:hover{
+  background: brown;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
