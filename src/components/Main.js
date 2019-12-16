@@ -17,7 +17,7 @@ let baseUrl = '';
 if (process.env.NODE_ENV === 'development') {
   baseUrl = 'http://cors-anywhere.herokuapp.com/https://serene-atoll-56752.herokuapp.com'
 } else {
-  console.log('this is for heroku');
+  baseUrl = 'https://serene-atoll-56752.herokuapp.com'
 }
 
 // =============================
