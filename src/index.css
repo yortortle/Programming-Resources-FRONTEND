@@ -10,26 +10,55 @@ body {
   text-align: center;
   border: 1px solid rgba(255, 0, 0, 0.3);
   border-radius: 3px;
+  font-family: sans-serif;
+  /* margin: 30px; */
+  padding: 30px 0px;
 }
 
-.container{
+.main-container{
   display: flex;
+  font-family: sans-serif;
+  margin-left: 0%;
+
+  /* flex-direction: space-around; */
 }
 
-form{
+.aside-container{
+  margin: 0;
+  min-height: 100vh;
+  padding-right: 30px;
+}
+
+main {
+  width: 100%;
+}
+
+.field1{
+  width: 70%;
+  margin-top: 60px;
+  padding-left: 50px;
+}
+
+.field2{
+  width: 70%;
+  margin-top: 60px;
+  padding-left: 50px;
+}
+/* form{
   color: blue;
-  /* display: flex; */
   width: 300px;
   flex-direction: column;
   text-align: center;
 }
+
+
 label {
   display: inline-block;
   width: 200px;
   margin: 10px;
   text-align: left;
   text-transform: uppercase;
-}
+} */
 
 input{
   width: 80%;
@@ -54,11 +83,14 @@ code {
 }
 
 aside {
+  margin-top: 20px;
   width: 300px;
-  min-height: 800px;
+  min-height: 400px;
   margin-right: 100px;
   padding: 15px 20px;
   background: rgb(130, 125, 115);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-radius: 2px;
 }
 
 aside li:hover {
@@ -69,13 +101,37 @@ aside li:hover {
 
 }
 
+aside li {
+  color: #000080;
+  line-height: 70px;
+  font-size: 18px;
+}
+
 aside ul {
   list-style-type: none;
   padding: 0;
+  /* margin-left: 20px; */
 }
 
 .submission{
-  width: 500px
+  width: 90%;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 50px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.asideNav{
+  margin-top: 30px;
+}
+
+.codeSnippet{
+  width: 500px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-radius: 5px;
 }
 .aside-container > ul, h1{
   margin-top: 20px;
@@ -148,4 +204,17 @@ aside ul {
   color: white;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.submit{
+  text-align: center;
+}
+
+.submitBtn{
+  width: 150px;
+  padding: 25px;
+}
+
+.codeSnippet{
+  margin-left: 50px;
 }

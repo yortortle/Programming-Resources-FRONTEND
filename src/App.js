@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header.js'
 import Aside from './components/Aside.js'
 import Main from './components/Main.js'
@@ -87,7 +88,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <div className="container">
+        <div className="main-container">
           <Aside handleView={this.handleView}/>
           <Main
             handleView={this.handleView}

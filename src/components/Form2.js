@@ -1,4 +1,6 @@
 import React from 'react';
+import Field from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button';
 
 class Form2 extends React.Component {
   constructor(){
@@ -33,15 +35,19 @@ class Form2 extends React.Component {
   }
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label htmlFor="title">Title: </label>
-        <input type="text" placeholder="add title" id="title" value={this.state.title} onChange={this.handleChange}></input>
-
-        <label htmlFor="description">Description: </label>
-        <input type="text" id="description" placeholder="add a description" value={this.state.description} onChange={this.handleChange}></input>
-
-        <input type="submit" value="submit"></input>
-      </form>
+      <Field onSubmit={this.handleSubmit} className="field2">
+        <Field.Group>
+          <Field.Text className="text-muted">Title Of Snippet</Field.Text>
+          <Field.Control type="text" placeholder="add title" id="title" value={this.state.title} onChange={this.handleChange}></Field.Control>
+        </Field.Group>
+        <Field.Group>
+          <Field.Text className="text-muted">Insert Code</Field.Text>
+          <Field.Control as="textarea" rows="5" id="description" placeholder="add a description" value={this.state.description} onChange={this.handleChange}></Field.Control>
+        </Field.Group>
+        <Field.Group className="submit">
+          <Button className="submitBtn" variant="primary" type="submit" value="submit">Submit</Button>
+        </Field.Group>
+      </Field>
     )
   }
 }

@@ -15,9 +15,9 @@ import Form2 from './Form2.js'
 // =============================
 let baseUrl = '';
 if (process.env.NODE_ENV === 'development') {
-  baseUrl = 'http://cors-anywhere.herokuapp.com/https://serene-atoll-56752.herokuapp.com'
-} else {
   baseUrl = 'https://serene-atoll-56752.herokuapp.com'
+} else {
+  console.log('this is for heroku');
 }
 
 // =============================
@@ -228,7 +228,6 @@ class Main extends React.Component {
 
     return (
       <main>
-      <h1>{this.props.view.pageTitle}</h1>
       {view1}
       </main>
     )

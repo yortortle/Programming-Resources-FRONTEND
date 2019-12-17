@@ -1,4 +1,6 @@
 import React from 'react';
+import Field from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button';
 
 class Form extends React.Component {
   constructor(){
@@ -39,24 +41,32 @@ class Form extends React.Component {
   }
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label htmlFor="title">Title: </label>
-        <input type="text" placeholder="add title" id="title" value={this.state.title} onChange={this.handleChange}></input>
-
-        <label htmlFor="tool">Tool: </label>
-        <input type="text" id="tool" placeholder="name of tool"value={this.state.tool} onChange={this.handleChange}></input>
-
-        <label htmlFor="description">Description: </label>
-        <input type="text" id="description" placeholder="add a description" value={this.state.description} onChange={this.handleChange}></input>
-
-        <label htmlFor="url">URL: </label>
-        <input type="text" id="url" placeholder="url" value={this.state.url} onChange={this.handleChange}></input>
-
-        <label htmlFor="cost">Cost: </label>
-        <input type="number" id="cost" placeholder="cost" value={this.state.cost} onChange={this.handleChange}></input>
-
-        <input type="submit" value="submit"></input>
-      </form>
+      <Field onSubmit={this.handleSubmit} className="field1">
+        {/* <h1>Add A New Resource</h1> */}
+        <Field.Group>
+          <Field.Text className="text-muted">Title of Resource</Field.Text>
+          <Field.Control type="text" placeholder="add title" id="title" value={this.state.title} onChange={this.handleChange}></Field.Control>
+        </Field.Group>
+        <Field.Group>
+          <Field.Text className="text-muted">Programming Language or Technology</Field.Text>
+          <Field.Control type="text" id="tool" placeholder="name of tool"value={this.state.tool} onChange={this.handleChange}></Field.Control>
+        </Field.Group>
+        <Field.Group>
+          <Field.Text className="text-muted">Description of video or course</Field.Text>
+          <Field.Control type="text" id="description" placeholder="add a description" value={this.state.description} onChange={this.handleChange}></Field.Control>
+        </Field.Group>
+        <Field.Group>
+          <Field.Text className="text-muted">Full URL to resource</Field.Text>
+          <Field.Control type="text" id="url" placeholder="url" value={this.state.url} onChange={this.handleChange}></Field.Control>
+        </Field.Group>
+        <Field.Group>
+          <Field.Text className="text-muted">Cost of course in USD</Field.Text>
+          <Field.Control type="number" id="cost" placeholder="cost" value={this.state.cost} onChange={this.handleChange}></Field.Control>
+        </Field.Group>
+        <Field.Group className="submit">
+          <Button className="submitBtn" variant="primary" type="submit" value="submit">Submit</Button>
+        </Field.Group>
+      </Field>
     )
   }
 }
