@@ -15,7 +15,7 @@ import Form2 from './Form2.js'
 // =============================
 let baseUrl = '';
 if (process.env.NODE_ENV === 'development') {
-  baseUrl = 'https://serene-atoll-56752.herokuapp.com'
+  baseUrl = 'http://cors-anywhere.herokuapp.com/https://serene-atoll-56752.herokuapp.com'
 } else {
   console.log('this is for heroku');
 }
