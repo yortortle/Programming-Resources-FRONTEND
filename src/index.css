@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime|Gelasio|Roboto+Mono&display=swap');
+
+:root {
+  --main-font: 'Courier';
+  --nav-font: 'Gelasio';
+  --card-font: 'Roboto';
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -7,19 +15,26 @@ body {
 }
 
 .header{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  height: 330px;
+  background-image: url(https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_148972376.width-800.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 1px solid rgba(255, 0, 0, 0.3);
   border-radius: 3px;
-  font-family: sans-serif;
+  font-family: var(--main-font);
   /* margin: 30px; */
-  padding: 30px 0px;
+  padding: 0;
 }
 
 .main-container{
   display: flex;
   font-family: sans-serif;
   margin-left: 0%;
-
+  background-color: grey;
   /* flex-direction: space-around; */
 }
 
@@ -88,8 +103,8 @@ aside {
   min-height: 400px;
   margin-right: 100px;
   padding: 15px 20px;
-  background: rgb(130, 125, 115);
-  border: 1px solid rgba(255, 0, 0, 0.3);
+  background: rgb(141, 115, 51);
+  border: 1px solid rgba(20, 16, 16, 0.3);
   border-radius: 2px;
 }
 
@@ -105,6 +120,7 @@ aside li {
   color: #000080;
   line-height: 70px;
   font-size: 18px;
+  font-family: var(--nav-font);
 }
 
 aside ul {
@@ -120,18 +136,36 @@ aside ul {
   margin-left: 50px;
   border: 1px solid rgba(255, 0, 0, 0.3);
   border-radius: 5px;
+  background-color: white;
+}
+
+.submission-header > h1 {
+  font-family: var(--card-font);
+}
+
+.submission-body {
+  margin-bottom: 10px;
 }
 
 .asideNav{
   margin-top: 30px;
 }
 
+article {
+  width: 100%;
+}
+
 .codeSnippet{
-  width: 500px;
+  width: 90%;
   padding: 20px;
   margin: 20px;
   border: 1px solid rgba(255, 0, 0, 0.3);
   border-radius: 5px;
+  background-color: white;
+}
+
+.snippet-header > h1 {
+  font-family: var(--card-font);
 }
 .aside-container > ul, h1{
   margin-top: 20px;
@@ -146,11 +180,13 @@ aside ul {
 
 .submission-options li {
   display: inline-block;
-  width: 50%;
+  width: 45%;
   text-align: center;
   padding: 5px;
   box-sizing: border-box;
   border-radius: 5px;
+  border: 1px solid black;
+  margin: 3px 10px;
 }
 .submission-list{
   width: 100%;
@@ -171,10 +207,6 @@ aside ul {
   border-radius: 5px;
 }
 
-.codeSnippet{
-  width: 500px;
-}
-
 .snippet-options > ul {
   list-style-type: none;
   padding: 0;
@@ -182,14 +214,13 @@ aside ul {
 
 .snippet-options li {
   display: inline-block;
-  width: 50%;
+  width: 45%;
   text-align: center;
   padding: 5px;
   box-sizing: border-box;
   border-radius: 5px;
-}
-
-.snippet-options > ul:hover {
+  border: 1px solid black;
+  margin: 3px 10px;
 }
 
 .snipedit:hover{
