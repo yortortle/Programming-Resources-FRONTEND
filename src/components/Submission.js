@@ -28,7 +28,6 @@ class Submission extends React.Component {
                 this.props.handleView('editSubmission', this.props.submissionData)}}>
                 edit submission</li>
               <li className="subDelete" onClick={() =>  {this.props.handleDelete(this.props.submissionData.id)}}>delete submission</li>
-              <Button variant="primary">Primary</Button>
             </ul>
           </div>
         </div>
