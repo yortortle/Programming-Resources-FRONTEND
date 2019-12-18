@@ -1,18 +1,29 @@
-# Let's Learn Programming!
+learn-programming-app
+https://lit-retreat-77505.herokuapp.com/
 
-## Link to Live Website
+By Troy Hancock and Adam Hwung
 
-## Technologies Used
+Project Summary
+We wanted to create a website where users could share relevent programming resources to aid in learning all the various tools involved in programming. It allows you to share both resoruces and code snippets for common programming problems.
 
-- React.js
-- PHP
-- MySQL
-- React Bootstrap 
+We communicated primarily over slack and zoom.
 
-## Introduction
+User Stories
+User is able to create resource submissions.
 
-Since we're just starting out in our programming career, we wanted to create a website that would give others the same resources. With the app, people can submit different courses that they know of in order to help guide others in learning more about different technologies and languauges.
+user is able to delete those submissions.
 
-## Unsolved Problems
+User is able to edit those submissions.
 
-Currently, the code snippet section has bad formatting when the snippet is created or updated. The formatting looks correct when filling out the form, but it doesnt stick when the card is created. 
+User is able to do all of the above to a seperete CodeSnippets model.
+
+User should have a clean and fluid experience with the websites navigation.
+
+Technology Used
+React
+
+PHP
+
+SQL
+
+HTML+CSS(Bootstrap css framework)
