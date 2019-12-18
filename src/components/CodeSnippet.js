@@ -12,7 +12,7 @@ class Snippet extends React.Component {
       <article>
         <div className="codeSnippet">
           <div className="snippet-header">
-            <h2>Snippet: {this.props.snippetData.title}</h2>
+            <h1>Snippet: {this.props.snippetData.title}</h1>
           </div>
           <div className="snippet-body">
             <h3>Description</h3>

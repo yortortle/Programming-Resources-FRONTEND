@@ -4,7 +4,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-          <h1> Programming Resources </h1>
+          <h1> Let's Learn Programming </h1>
       </div>
     )
   }
